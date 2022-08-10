@@ -1,0 +1,508 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<title>Auto Grouping Bot</title> 
+
+</head>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+#heading{
+
+text-align:left;
+
+}
+
+ h1,h4,h5,h2{
+ 
+overflow:auto;
+margin:0px auto;
+padding:0px auto;
+text-align:center
+ }
+h4{
+font-weight:;
+ }
+ h5{
+font-weight:normal;
+ }
+ 
+table, th, td {
+  border:0px solid black;
+}
+
+footer{
+text-align:center;
+}
+.form{
+  width:60%;
+  height:40px;
+  font-size:25px;
+  }
+  
+  
+   #grp_name{
+  width:80%;
+  height:40px;
+  font-size:25px;
+  }
+  #admin_txt_B{
+  width:80%;
+  height:200px;
+  
+  }
+  
+  .date{
+  width:38.4%;
+  height:40px;
+  font-size:25px;
+  
+  }
+  
+  #ug{
+  }
+   
+  #sHead{
+  text-align:center;
+  border:1px solid grey;
+  padding-left:5px;
+  padding-right:5px;
+  word-break: break-word;
+  }
+  
+  #event{
+  text-align:center;
+  border:1px solid grey;
+  padding-left:5px;
+  padding-right:5px;
+  word-break: break-word;
+  }
+  
+  #gen_members{
+  text-align:center;
+  border:1px solid grey;
+  padding-left:5px;
+  padding-right:5px;
+  word-break: break-word;
+  }
+  
+  #pick_BTN{
+  height:120px;
+  width:61%;
+  font-size:40px;
+  }
+  
+  #admin_create_Grp{
+   height:80px;
+  width:80%;
+  font-size:30px;
+  }
+  #av_grps{
+   word-break: break-word;
+  border: 0px solid grey;
+  width:60%;
+   height:50px;
+  text-align:left;
+  font-size:30px;
+  
+  
+  }
+  #list_grps{
+  overflow:auto;
+  border: groove;
+  border: 0px solid grey;
+  width:58%;
+  height:400px;
+  word-break: break-word;
+  font-style:normal;
+  text-align:left;
+  font-size:18px;
+  background-color :;
+  padding-left:5px;
+  padding-right:5px;
+  padding-bottom:40px;
+  padding-top:0px;
+  }
+  
+  #success{
+  transition:0.2s;
+  width:60%;
+  height:400px;
+  border: 1px solid grey;
+  background-color :white;
+  position: absolute; top: 140px;left: 230px;
+  word-break: break-word;padding-bottom:10px;  
+  
+  
+  }
+  #sucess_BODY{
+  width:97%;
+  height:250px;
+  border: 0px solid grey;
+  word-break: break-word;
+  overflow:auto;
+  text-align:left;
+  }
+  
+  .sucessBTNS{
+  width:20%;
+  height:50px;
+  font-size:18px;
+  
+  }
+  #close{
+  position: absolute; top: 330px;left: 230px  
+  }
+  #print{
+  position: absolute; top: 330px;left: 400px  
+  }
+  #sucess_HEADER{
+  
+  }
+  #success_INNER{
+  overflow:auto;
+  border:0px solid grey;
+  width:98%;
+  height:280px;
+  padding-left:10px;
+  }
+  
+  #grp_discription{
+   width:100%;
+  
+  border: 1px solid grey;
+  
+  }
+  #grp_discription_INNER{
+ 
+  padding-left:20px;
+  padding-right:20px;
+  word-break: break-word;overflow:auto
+   padding-bottom:40px;
+  padding-top:30px;
+  border: 1px solid grey;
+  height:800px;
+  
+  }
+  
+  #grp_members_INNER{
+ width:100%;
+  border: 1px solid grey;
+  }
+  #public_view{
+   height:10px;
+   width:10px;
+  font-size:50px;
+  float:left;
+  font-align:left;
+  }
+  
+  #save_msg{
+  height:50px;
+   width:80%;
+  font-size:20px;
+  }
+  
+  #show_grps{
+  height:50px;
+   width:80%;
+  font-size:20px;
+  }
+  
+   #admin_txt_comp{
+  width:80%;
+  height:135px;
+  
+  }
+  #headerlogo{
+  
+  }
+  
+  .Admin_set,Admin_set1{
+  float: left;
+  width: 48%;
+  padding: 10px;
+   border:1px solid grey;
+  
+  
+  }
+
+</style>
+<body>
+
+<table style="width:100%"  id = "headerlogo">
+  <tr>
+   <td style="width:59%">
+          <h1 id="heading">Auto Grouping Bot <span style = "font-size:15px"></span></h1>
+		  
+   </td>
+
+    <td style="width:1%"><div>
+	
+	</td>
+
+    <td style="width:1%">
+	
+	</td>
+     
+    <td style="width:39%, text-align:right"><div id="buttons" style="text-align:right">
+	
+	<div>about AGB | contact admin | create groups</div>
+    </td>
+  </tr>
+  </table>
+ <hr
+ 
+
+<br>
+
+<h3 id="sHead">Admin Arena</h3>
+<div id="event">Save groups</div>
+
+
+<br>
+<center><div>Set up groups & your profile  </div></center>
+<br>
+
+<div class = "Admin_set">
+   <center> <div>
+   
+   <input type="text" class = "admim_form" placeholder = "Group name" id = "grp_name">
+   <br>
+   <br>
+   <textarea id="admin_txt_B"   placeholder = "Whats this group about?"></textarea>
+   <br>
+   <br>
+   
+   <button id="admin_create_Grp">Create group</button>
+   
+   <br>
+   <br>
+   <br>
+
+   
+   </div></center> 
+   </div>
+
+    
+	
+	<div class = "Admin_set">
+	<center>
+	<div>
+	<span><input type = "text" class = "date" placeholder = "Starting date"> &nbsp <input type = "text" class = "date"  placeholder = "ending date"><span>
+	<br>
+	<br>
+	<input type="text" class = "admim_form" placeholder = "Your company name" id = "grp_name">
+   
+   
+   
+   <br>
+   <br>
+   <input type="text" class = "admim_form" placeholder = "The event" id = "grp_name">
+   <br>
+   <br>
+   
+   
+   
+   <input type="text" class = "admim_form" placeholder = "eg. use Batch or club, instead of group" id = "grp_name">
+   <br>
+   <br>
+   
+   <textarea id="admin_txt_comp"   placeholder = "Describe your company"></textarea>
+   <br>
+   <br>
+  
+	
+	
+	</div>
+	</center>
+	
+	</div>
+  
+  
+
+  
+ <br>
+ <br> 
+ <br>
+ 
+ 
+ 
+<br>
+
+<div style="clear: both"></div>
+	
+	<div style="clear: both"></div>
+	
+	 <br>
+ <br> 
+ <br>
+ 
+   <center><div>Edit & Manage Groups </div></center>
+    <br>
+
+<div  class = "Admin_set">
+  <center>
+    
+  
+   <div >
+   
+   Groups Stats
+   
+   <br>
+   
+   Nelson Mandela Group   10 members
+   
+   </div></center> 
+
+</div>
+    
+	
+	<div class = "Admin_set">
+	<center>
+	<div >
+	
+	<span><input type = "checkbox">use only the name field </span> &nbsp &nbsp &nbsp   <span><input type = "checkbox"> show group members to the public </span>
+	
+   <br>
+   <span><input type = "checkbox">use phone field instead of email </span>
+   <br>
+   
+   
+   </div>
+   <br>
+  
+  
+   
+   
+   <textarea id="admin_txt_B"   placeholder = "Customize the sucess message"></textarea>
+   
+   <br>
+   <br>
+   
+   <button id="save_msg">Save Info</button>
+   
+   <br>
+   <br>
+   
+	
+	
+	</center>
+	</div>
+	
+
+
+<br>
+<br>
+<br>
+<br>
+ 
+ 
+ 
+ 
+
+<div style="clear: both"></div>
+	
+	<div style="clear: both"></div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<footer>
+by likeaking company
+
+<br>
+
+<i>reality is a lair</i>
+</footer>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' > 
+
+
+
+var display_show_hide = document.getElementById("display_Allgrps");
+
+var u_re_grped = document.getElementById("success");
+
+var UR_grp = document.getElementById("urGRP");
+
+var MBR_name = document.getElementById("name");
+
+var MBR_contact = document.getElementById("name");
+
+var av_GRPS = document.getElementById("av_grps").innerHTML = "Avialable groups"; 
+
+var Title_Event = document.getElementById("sHead").innerHTML = "Church Of Nigeria Fund Raising Groups 2021";
+
+var total_Members = document.getElementById("gen_members").innerHTML = "500 people are already part of the avialable groups"
+
+
+
+
+var success_MSG_S = "Dear ";
+
+var success_MSG = ", you are officially wellcomed to "+ UR_grp.innerHTML + "."  ;
+
+function show_sucess(){
+
+document.getElementById("success").style.display = "block";
+
+document.getElementById("success_INNER").innerHTML = "<h2>"+ "Wellcome to " +UR_grp.innerHTML+ "</h2>" + "<br>" + "<div>" + success_MSG_S + MBR_name.value + "" +success_MSG + "</div>" ;
+}
+
+
+function close_sucess(){
+document.getElementById("success").style.display = "none";
+}
+
+
+function show_hide(){
+
+
+
+if (display_show_hide.style.display === "none"){
+
+display_show_hide.style.display = "block";
+document.getElementById("show_grps").innerHTML = "Hide  groups";
+
+}
+else{
+
+display_show_hide.style.display = "none";
+document.getElementById("show_grps").innerHTML = "Show  groups";
+
+}
+}
+
+
+
+</script>
+</html>

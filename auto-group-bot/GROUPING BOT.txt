@@ -1,0 +1,2729 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<title>Auto Grouping Bot</title> 
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+*{
+  box-sizing: border-box;
+}
+
+
+#heading{
+
+text-align:left;
+
+}
+
+ h1,h4,h5,h2{
+ 
+overflow:auto;
+margin:0px auto;
+padding:0px auto;
+text-align:center
+ }
+h4{
+font-weight:;
+ }
+ h5{
+font-weight:normal;
+ }
+ 
+table, th, td {
+  border:1px solid black;
+}
+
+footer{
+
+
+}
+.form{
+  width:60%;
+  height:40px;
+  font-size:25px;
+  }
+  
+  #ug{
+  }
+   
+  #sHead{
+  text-align:center;
+  border:1px solid grey;
+  padding-left:5px;
+  padding-right:5px;
+  word-break: break-word;
+  }
+  #gen_members{
+  text-align:center;
+  border:1px solid grey;
+  padding-left:5px;
+  padding-right:5px;
+  word-break: break-word;
+  }
+  
+  #COUNT_down{
+   text-align:center;
+  border:1px solid grey;
+  padding-left:5px;
+  padding-right:5px;
+  word-break: break-word;
+  
+  }
+  
+  #pick_BTN{
+  height:100px;
+  width:61%;
+  font-size:40px;
+  }
+  #av_grps{
+   word-break: break-word;
+  border: px solid grey;
+  width:70%;
+   height:40px;
+  text-align:center;
+  font-size:25px;
+  overflow:auto; 
+  }
+  #list_grps{
+  overflow:auto;
+  border: groove;
+  border: 0px solid grey;
+  width:70%;
+  height:240px;
+  word-break: break-word;
+  font-style:normal;
+  text-align:left;
+  font-size:18px;
+  background-color :;
+  padding-bottom:30px;
+ 
+ 
+  }
+  
+   #success1{
+  transition:0.2s;
+  width:98%;
+  height:600px;
+  border: 1px solid grey;
+  background-color :white;
+  position: absolute; top: 30px;left: -1260px;
+  word-break: break-word;padding-bottom:10px;  
+  resize: both;
+  
+  }
+  
+  #success{
+  transition:0.2s;
+  width:60%;
+  height:400px;
+  border: 1px solid grey;
+  background-color :white;
+  position: absolute; top: 140px;left: 260px;
+  word-break: break-word;padding-bottom:10px;  
+  display:none;
+  
+  }
+  
+  #Admin_control{
+  
+  overflow: auto;
+  width:100%;
+  height:575px;
+
+  }
+  
+  #shw_Admin{
+  transition:0.2s;
+  width:10%;
+  height:500px;
+  border: 1px solid grey;
+  background-color :;
+  position: absolute; top: 100px;left: 70px;
+  
+  }
+  
+  #sucess_BODY{
+  width:97%;
+  height:250px;
+  border: 0px solid grey;
+  word-break: break-word;
+  overflow:auto;
+  text-align:left;
+  }
+  
+  .sucessBTNS{
+  width:20%;
+  height:50px;
+  font-size:18px;
+  
+  }
+  #close{
+  position: absolute; top: 330px;left: 230px  
+  }
+  #print{
+  position: absolute; top: 330px;left: 400px  
+  }
+  #sucess_HEADER{
+  
+  }
+  #success_INNER{
+  overflow:auto;
+  border:0px solid grey;
+  width:98%;
+  height:280px;
+  padding-left:10px;
+  }
+  
+  #grp_discription{
+   width:100%;
+  
+  border: 1px solid grey;
+  
+  }
+  #grp_discription_INNER{
+ 
+  padding-left:20px;
+  padding-right:20px;
+  word-break: break-word;overflow:auto
+   padding-bottom:40px;
+  padding-top:30px;
+  border: 1px solid grey;
+  height:800px;
+  
+  }
+  
+  #grp_members_INNER{
+ 
+ width:100%;
+  
+  border: 1px solid grey;
+  
+  }
+  
+  a{
+text-decoration : none
+
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+  #header_fixed{
+  
+  }
+
+
+
+#av_g{
+
+float: left;
+  width: 50%;
+  padding: 10px;
+   border:1px solid grey;
+   height:352px;
+}
+
+
+//#spangrp:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+#dash_brdnn,#bb{
+float: left;
+  width: 50%;
+  padding: 10px;
+   border:1px solid grey;
+   
+}
+
+ #mobile_h{
+   display:none;
+  text-align:center;
+  
+  }
+  
+  #mobile_menu{
+   display:none;
+  }
+
+#urGRP{
+font-size:25px;
+border:1px solid grey;
+   word-break: break-word;
+      padding-left:5px;
+      padding-right:5px;
+	  padding-top:5px;
+      
+      width:60%;
+	  
+	  color:grey;
+	  border-style: dashed;
+	  
+      height:40px;
+}
+
+ .m_brk{
+  display:none;
+  }
+  
+  
+
+
+
+  
+
+.form{
+  width:60%;
+  height:40px;
+  font-size:25px;
+  }
+  
+  
+   #grp_name{
+  width:80%;
+  height:40px;
+  font-size:17px;
+  }
+  
+  .admim_form{
+  width:80%;
+  height:40px;
+  font-size:17px;
+  }
+  
+  #admin_txt_B{
+  width:80%;
+  height:200px;
+  
+  }
+  
+   #admin_txt_B_Success{
+  width:80%;
+  height:200px;
+  
+  }
+  
+   #admin_txt_BVIP{
+  width:80%;
+  height:200px;
+  
+  }
+  
+  .date{
+  width:80%;
+  height:40px;
+  font-size:17px;
+  
+  }
+  
+  .rename_dat{
+  width:39.6%;
+  height:40px;
+  font-size:17px;
+  
+  }
+  
+  .edit_btn{
+  height:40px;
+  width:40%;
+  
+  }
+  
+  #ug{
+  }
+   
+  #sHead{
+  text-align:center;
+  border:1px solid grey;
+  padding-left:5px;
+  padding-right:5px;
+  word-break: break-word;
+  }
+  
+ #_Event{
+  text-align:center;
+  border:1px solid grey;
+  padding-left:5px;
+  padding-right:5px;
+  word-break: break-word;
+  }
+  
+  #event{
+  text-align:center;
+  border:1px solid grey;
+  padding-left:5px;
+  padding-right:5px;
+  word-break: break-word;
+  }
+  
+  #gen_members{
+  text-align:center;
+  border:1px solid grey;
+  padding-left:5px;
+  padding-right:5px;
+  word-break: break-word;
+  }
+  
+  
+  
+  #admin_create_Grp{
+   height:80px;
+  width:80%;
+  font-size:30px;
+  }
+  #av_grpsAdmin{
+   word-break: break-word;
+  border: 0px solid grey;
+  width:60%;
+   height:50px;
+  text-align:center;
+  font-size:30px;
+  
+  
+  }
+  #list_grpsAdmin{
+  overflow:auto;
+  border: groove;
+  border: 0px solid grey;
+  width:58%;
+  height:250px;
+  word-break: break-word;
+  font-style:normal;
+  text-align:left;
+  font-size:18px;
+  background-color :;
+  padding-left:5px;
+  padding-right:5px;
+  padding-bottom:40px;
+  padding-top:0px;
+  }
+  
+  
+  
+  #grp_discription{
+   width:100%;
+  
+  border: 1px solid grey;
+  
+  }
+  #grp_discription_INNER{
+ 
+  padding-left:20px;
+  padding-right:20px;
+  word-break: break-word;overflow:auto
+   padding-bottom:40px;
+  padding-top:30px;
+  border: 1px solid grey;
+  height:800px;
+  
+  }
+  
+  #grp_members_INNER{
+ width:100%;
+  border: 1px solid grey;
+  }
+  #public_view{
+   height:10px;
+   width:10px;
+  font-size:50px;
+  float:left;
+  font-align:left;
+  }
+  
+  #save_msg{
+  height:50px;
+   width:80%;
+  font-size:20px;
+  }
+  
+  #show_grps{
+  height:50px;
+   width:80%;
+  font-size:20px;
+  }
+  
+   #admin_txt_comp{
+  width:80%;
+  height:135px;
+  
+  }
+  #headerlogo{
+  
+  }
+  
+  .Admin_set,Admin_set1{
+  float: left;
+  width: 50%;
+  padding: 10px;
+   border:1px solid grey;
+   
+  
+  }
+  #show{
+  display:none;
+  
+  }
+  
+.create_grpss {
+        cursor: pointer;
+      }
+	  
+
+
+#comeWith_BringTHIS{
+width:80%;
+border:1px solid grey;
+text-align:center;
+ word-break: break-word;
+}
+
+P{
+
+border-radius :2px 2px 2px 2px;
+line-height: normal;
+}
+
+#about_groups{
+height:150px;
+width:80%;
+border:0px solid grey"
+}
+
+#Repgrp_info{
+height:150px;
+width:80%;
+height:50px;
+font-size:20px"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  #av_g {
+    width: 100%;
+	height:400px;
+  }
+
+#footA{
+font-size:15px;
+border:1px solid grey;
+width;float:center;
+}
+
+
+ #dash_brdnn {
+    width: 100%;
+  }
+  
+  .Htable{
+  display:none;
+  }
+  
+  #mobile_h{
+   display:block;
+  text-align:center;
+  
+  }
+  
+  #mobile_menu{
+   display:block;
+  text-align:center;
+  font-size:12px;
+  
+  }
+  #sHead{
+  font-size:14px;
+  font-weight:normal;
+  }
+  
+  #COUNT_down{
+  font-size:11px;
+  }
+  
+  #gen_members{
+  font-size:11px;
+  }
+  
+  #urGRP{
+font-size:17px;
+border:1px solid grey;
+   word-break: break-word;
+      padding-left:5px;
+      padding-right:5px;
+	  padding-top:4px;
+      
+      width:100%;
+	  
+	  color:grey;
+	  border-style: dashed;
+	  
+      height:30px;
+}
+
+.form{
+  width:100%;
+  height:30px;
+  font-size:12px;
+  }
+  
+   #pick_BTN{
+  height:80px;
+  width:100%;
+  font-size:20px;
+  }
+  #ug{
+  font-size:11px;
+  }
+  
+  #av_grps{
+   word-break: break-word;
+  border: 0px solid grey;
+  width:100%;
+   height:25px;
+  text-align:center;
+  font-size:17px;
+  overflow:auto; 
+  }
+
+ #list_grps{
+  overflow:auto;
+  border: groove;
+  border: 0px solid grey;
+  width:100%;
+  height:350px;
+  word-break: break-word;
+  font-style:normal;
+  text-align:left;
+  font-size:13px;
+  background-color :;
+  padding-bottom:30px;
+}
+
+#footA{
+font-size:15px;
+border:1px solid grey;
+width;
+text-align:center;
+}
+
+ #success{
+ font-size:12px;
+  transition:0.2s;
+  width:90%;
+  height:300px;
+  border: 1px solid grey;
+  background-color :white;
+  position: absolute; top: 140px;left: 13px;
+  word-break: break-word;padding-bottom:10px;  
+  display:none;
+  
+  }
+  
+  #Admin{
+ font-size:12px;
+  transition:0.2s;
+  width:90%;
+  height:300px;
+  border: 1px solid grey;
+  background-color :white;
+  position: absolute; top: 540px;left: 15px;
+  word-break: break-word;padding-bottom:10px;  
+  
+  
+  }
+  
+    #sucess_HEADER{
+  font-size:2px;
+  }
+  
+  .sucessBTNS{
+  width:25%;
+  height:30px;
+  font-size:10px;
+  
+  }
+  #close{
+  position: absolute; top: 250px;left: 58px  
+  }
+  #print{
+  position: absolute; top: 250px;left: 120px  
+  }
+  #line{
+  display:none;
+  }
+  .m_brk{
+  display:none;
+  }
+  
+    .Admin_set,Admin_set1{
+  float: left;
+  width: 100%;
+  padding: 10px;
+   border:1px solid grey;
+}
+
+#comeWith_BringTHIS{
+width:100%;
+border:1px solid grey;
+text-align:center;
+ word-break: break-word;
+}
+}
+</style>
+<body>
+
+
+ 
+
+<div id = "display_Allgrps1" style="width:50%;height:100px; border:1px solid grey;background-color:red;display:none"></div>
+<div id = "mobile_h"><h2>Auto Grouping Bot </h2></div>
+
+<div id = "mobile_menu">about AGB | contact admin | <span class = "create_grpss"  href="#" onclick="Creategroups();return false;">create groups</span></div>
+<div>
+<table style="width:100%" class = "Htable">
+  <tr>
+   <td style="width:50%">
+   
+          <h1 id="heading">Auto Grouping Bot <span style = "font-size:15px"></span></h1>
+   </td>
+
+    <td style="width:1%"><div>
+	
+	</td>
+
+    <td style="width:1%">
+	
+	</td>
+     
+    <td style="width:39%, text-align:right"><div id="buttons" style="text-align:right">
+	
+	<div>about AGB | contact groups admin | <span class = "create_grpss"  href="#" onclick="Creategroups();return false;">create groups</span></div>
+	
+    </td>
+  </tr>
+   
+  </table>
+<hr id = "line">
+
+<br class = "m_brk" >
+<br class = "m_brk">
+</div>
+ 
+
+
+
+
+
+<b><div id="sHead"></div></b>
+
+<div id="_Event"></div>
+
+<small><div id="COUNT_down"></div></small>
+<br>
+
+
+
+<div id="gen_members"></div>
+
+
+
+
+
+
+
+<div id = "dash_brdnn">
+
+  <center>
+    
+   <b><div id="urGRP">Your group </b></div>
+	<br>
+   
+   <input type="text" class = "form" placeholder = "Name" id = "name">
+   <br>
+   <br>
+   <input type="text" class = "form" placeholder = "email" id = "contact">
+   <br id = "emailZ_brk1" style = "display:block">
+   <br   id = "emailZ_brk2"  style = "display:none">
+   <input type="text" class = "form" placeholder = "phone number" id = "Phone_contact"  style = "display:none">
+   <br id = "yourGRP_brk1" "display:none" >
+   
+   <input type="text" class = "form" value = "" id = "other_contact"    style = "display:none">
+   <br   id = "oda_FLDbrk1" style = "display:none">
+   
+   
+   <button id = "pick_BTN" onclick = "pick_A_grp()">Pick a group</button>
+   <br>
+   <br>
+    <div id ="ug" >100% Unbiased grouping</div>
+   </center> 
+   </div>
+
+
+    
+	<div id = "av_g">
+	<center><div  id="av_grps"></div></center>
+	<center><div  id="list_grps">
+	<div id = "SEE_dGrps1"  style = "display:none"></div>
+	<div id = "SEE_dGrps2"  style = "display:none"></div>
+	<div id = "SEE_dGrps3"  style = "display:none" ></div>
+	<div id = "SEE_dGrps4"  style = "display:none"></div>
+	<div id = "SEE_dGrps5"  style = "display:none"></div>
+	<div id = "SEE_dGrps6"  style = "display:none"></div>
+	<div id = "SEE_dGrps7"  style = "display:none"></div>
+	<div id = "SEE_dGrps8"  style = "display:none"></div>
+	<div id = "SEE_dGrps9"  style = "display:none"></div>
+	<div id = "SEE_dGrps10"  style = "display:none"></div>
+	<div id = "SEE_dGrps11"  style = "display:none"></div>
+	<div id = "SEE_dGrps12"  style = "display:none"></div>
+	<div id = "SEE_dGrps13"  style = "display:none"></div>
+	<div id = "SEE_dGrps14"  style = "display:none"></div>
+	<div id = "SEE_dGrps15"  style = "display:none"></div>
+	<div id = "SEE_dGrps16"  style = "display:none"></div>
+	<div id = "SEE_dGrps17"  style = "display:none"></div>
+	<div id = "SEE_dGrps18"  style = "display:none"></div>
+	<div id = "SEE_dGrps19"  style = "display:none"></div>
+	<div id = "SEE_dGrps20"  style = "display:none"></div>
+	<div id = "SEE_dGrps21"  style = "display:none"></div>
+	<div id = "SEE_dGrps22"  style = "display:none"></div>
+	<div id = "SEE_dGrps23"  style = "display:none"></div>
+	<div id = "SEE_dGrps24"  style = "display:none"></div>
+	<div id = "SEE_dGrps25"  style = "display:none"></div>
+	<div id = "SEE_dGrps26"  style = "display:none"></div>
+	<div id = "SEE_dGrps27"  style = "display:none"></div>
+	<div id = "SEE_dGrps28"  style = "display:none"></div>
+	<div id = "SEE_dGrps29"  style = "display:none"></div>
+	<div id = "SEE_dGrps30"  style = "display:none"></div>
+	
+	
+	</div></center>
+    </div>
+ 
+
+ <div style="clear: both"></div>
+	
+	<div style="clear: both"></div>
+ 
+
+ <center><div id = "comeWith_BringTHIS">Processing of documents will start on Monday</div></center>
+ 
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ 
+  <center><div id = "Event_ORG"><b> Grouping event Organiser</b>
+  <center><div id = "About_THIScomp"></div></center>
+  </div></center>
+    
+	<div style="clear: both"></div>
+	
+	<div style="clear: both"></div>
+	<br><br><br>
+	
+
+ 
+ 
+ <center><footer >
+by likeaking company
+
+<br>
+
+<i>reality is a lair</i>
+</footer></center>
+
+	
+
+
+
+
+ <div id="success1" style="background-color:yellow">
+ 
+<div style="background-color:red;height:22px;width:100%"><span>
+
+<button style="float:right"  onclick = "close_it()">close</button><button style="float:right;" id = "hide"  onclick = "shownHide()">hide</button><button style="float:right;" id = "show"  onclick = "SHOW()">show</button>
+</span>
+</div>
+
+<div style="display:none" id = "small_admin" >
+<div id="sHead">Admin Arena</div>
+<div id="event">Save Info</div>
+</div>
+<div id = "Admin_control">
+
+
+<h3 id="sHead">Admin Arena</h3>
+<center> <button onclick = "save_grpInfo()">save info</button> <button>End grouping</button> <button>Go live</button> </center>
+
+<center><div></div></center>
+
+
+
+<center><div> </div></center>
+
+<div  class = "Admin_set">
+  <center>
+   <div >
+   
+  <b> Groups Stats </b>
+   
+   <br>
+   </div></center> 
+   <center> <div ><span  id="creATION_date">Created on 17/10/2021</span> | <span  id="gen_membersAdmin"></span></div></center> 
+   <center> <div></div></center> 
+   <center> <div id="total_Admin"> Total members : </div></center> 
+   
+    <div  style = "height:300px;overflow:auto">
+    
+   	<div id = "SEE_dGrpsADMIN1"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN2"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN3"  style = "display:none" ></div>
+	<div id = "SEE_dGrpsADMIN4"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN5"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN6"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN7"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN8"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN9"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN10"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN11"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN12"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN13"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN14"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN15"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN16"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN17"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN18"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN19"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN20"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN21"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN22"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN23"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN24"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN25"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN26"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN27"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN28"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN29"  style = "display:none"></div>
+	<div id = "SEE_dGrpsADMIN30"  style = "display:none"></div>
+
+    </div>
+</div>
+
+<div  class = "Admin_set"  style = "height:400px">
+  <center>
+   <div >
+   
+  <b>Live Updates &nbsp <button id = "clear_Lfeeds"  style = "float:right" onclick = "clear_allLvfeeds()">delete updates </button></b>
+   <div id = "msg_counter"></div>
+   
+   
+   </div></center> 
+   
+   <center> <div id="gen_membersAdminxx"  style = "text-align:left;overflow:auto;height:300px"></div></center> 
+    
+   	
+
+</div>
+
+
+<div style="clear: both"></div>
+	
+	<div style="clear: both"></div>
+	
+	 <br>
+ <br> 
+ <br>
+ 
+   <center><div><b>Set up & manage groups </b></div></center>
+    <br>
+
+
+<div class = "Admin_set" >
+   <center> <div  >
+   
+   <input type="text" class = "admim_form" placeholder = "Group name" id = "grp_name">
+   <br>
+   <br>
+   <textarea id="admin_txt_B"   placeholder = "Whats this group about?"></textarea>
+   <br>
+   
+   
+   <button id="admin_create_Grp" onclick = "Create_URgroup()">Create group</button>
+   
+   <br>
+   <br>
+   <br>
+
+   
+   </div></center> 
+   </div>
+
+    
+	
+	<div class = "Admin_set">
+	<center>
+	<div>
+	<span><input type = "text" class = "date" placeholder = "Starting date" id = "stating_DT" > <span>
+	<br>
+	<br>
+	<input type="text" class = "admim_form" placeholder = "Your company name" id = "grp_companynAME">
+   
+   
+   
+   <br>
+   <br>
+   <input type="text" class = "admim_form" placeholder = "The event" id = "grp_event">
+   <br>
+   <br>
+   
+   
+   
+   <input type="text" class = "admim_form" placeholder = "eg. use team or club, instead of group" id = "grp_Avial_Changename">
+   <br>
+   <br>
+   
+   <textarea id="admin_txt_comp"   placeholder = "Describe your company"></textarea>
+   <br>
+   <br>
+  
+	
+	
+	</div>
+	</center>
+	
+	</div>
+  
+  
+
+  
+ <br>
+ <br> 
+ <br>
+ 
+ 
+ 
+<br>
+
+<div style="clear: both"></div>
+	
+	<div style="clear: both"></div>
+	
+	 <br>
+ <br> 
+ <br>
+ 
+   <center><div><b>Edit & Manage Groups </b></div></center>
+    <br>
+
+<div  class = "Admin_set">
+  <center>
+    
+  
+   <div >
+   
+  <b> Rename groups </b>
+   
+   <br>
+   <br>
+   </div></center> 
+   <center> <div id="rename_grps">
+   <div id = "edit_ME"  > 
+   <select type = "text" class = "rename_dat"   id = "options"   onclick= "Edit_dAboutGRPS()">
+   
+   <option >Gold Group</option>
+   <option >Diamond Group</option>
+   <option id ="three">Platinum Group</option>
+  </select> <input type = "text" class = "rename_dat"   id = "rename_me" placeholder = ""  ><span><div  style="padding:4px"> <button class = "edit_btn"  id = "rename_me_BTN"  onclick = "rename_MYgrp()">rename group</button></span> <span > <button class = "edit_btn" id = "delete_me_BTN"  onclick = "toggleoo_THIS()" >delete group</button>  </span></div> </div>
+   
+   <div  id = "doYOU_delete"   class = "wanto_delete"    style = "padding:5px;display:none">Do you want to procced with this action? <span><button id = "yes_delete"    class = "delete_it"  onclick = "DEL_AboutgrpF()">Yes</button> <button  id = "No_delete"   class = "dont_deleteO"  onclick="_OrNo(doYOU_delete)">No</button></span></div>
+  <div  id = "dis_hidden" style = "">
+   
+   <textarea id="about_groups"   class = "about_d_Grps" style = "height:150px;width:80%;border:0px solid grey"></textarea>
+   
+   
+   
+   <button  id = "Repgrp_info"  onclick = "edit_grpCont()">Replace group info</button>
+   
+   </div>
+   
+   </div></center> 
+    
+   	
+
+</div>
+    
+	
+	<div class = "Admin_set">
+	<center>
+	<div  style = " border:0px solid grey;text-align:left;width:80%">
+	
+	<span><input type = "checkbox"  id = "use_NAMEonly"  onclick = "UseName_Only()">use only the name field </span> <span><input type = "checkbox"  id = "public_see_dGRP"> show group members to the public </span>
+	
+   <br>
+   <span ><input type = "checkbox"  id = "use_phone"  onclick = "use_PhoneContact()">use phone field </span><span ><input type = "checkbox"  id = "use_Email"   onclick = "hide_emailFields()">hide email field </span><span ><input type = "checkbox" id = "otherflds" onclick = "use_otherFields()">use other fields </span>
+   <br>
+   <div > <input  placeholder = "Name the field"   type = "text" style = "float:center;width:50%;display:none" id = "Name_otherFIELD" ></div>
+   
+   </div>
+   <br>
+  
+  
+   
+   <center><div>Customize the sucess message</div></center>
+   <textarea id="admin_txt_B_Success"   placeholder = "Customize the sucess message" ></textarea>
+   
+   <div><small>If you mistakinly delete the original message, click <button  onclick = "reset_custMSG()">me</button> <br>
+        
+	 ***Important!: Don't delete the  "(< >)" tags & words inside the tags.
+   
+   </small></div>
+   
+   
+   
+   <textarea id="admin_txt_BVIP"   placeholder = "Write an important message. eg, come with this, do this..."></textarea>
+   <button id="save_msg"  onclick = "save_grpInfo()">Save Info</button>
+   
+   <br>
+   <br>
+   
+	
+	
+	</center>
+	</div>
+	
+
+
+<br>
+<br>
+<br>
+<br>
+ 
+ 
+ 
+ 
+
+<div style="clear: both"></div>
+	
+	<div style="clear: both"></div>
+
+
+<br>
+<br>
+
+
+<div  id = "About_EVERYgroup" class = "Admin_set"   style="border:1px solid grey"><b><center>Group info</center></b></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+  </div>
+  <div style="clear: both"></div>
+	
+	<div style="clear: both"></div>
+  <button id="shw_Admin"   style="display:none">Show Admin</button>
+
+
+
+
+
+
+ 
+ <div id="success" style="display:none">
+ <br>
+ <div id="success_INNER" style="word-break: break-word">
+ <div style="word-break: break-word">
+ <h2 id="sucess_HEADER"></h2>
+ </div>
+ <br>
+ <center><div id="sucess_BODY" style="text-align:left"> </div></center>
+ 
+ <br>
+ </div>
+ <center><div>
+ <button class ="sucessBTNS" id="close" onclick = "close_sucess()">Close</button>
+ 
+ <button class ="sucessBTNS" id="print">Print</button>
+ 
+ </div>
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src = "AGM.js" ></script>
+
+
+<script type='text/javascript' >
+let counter = 0;
+var C_grp = document.getElementsByClassName("Cre_grps");
+let shuff = [];
+let third = [];
+
+
+
+let groupsSEE  = ["Gold Group", "Diamond Group", "Platinum Group", "Kings Group", "Queens Group", "Nelson Mandela Group", "M. L. King Group", "Elon Musk Group","Dangote Group","Gold Group2", "Diamond Group2", "Platinum Group2", "Kings Group2", "Queens Group2", "Nelson Mandela Group2", "M. L. King Group2", "Elon Musk Group2", "Gold Group3", "Diamond Group3", "Platinum Group3", "Kings Group3", "Queens Group3", "Nelson Mandela Group3", "M. L. King Group3", "Elon Musk Group3","Gold Group4", "Diamond Group4", "Platinum Group4", "Kings Group4", "Queens Group4", "Nelson Mandela Group", "M. L. King Group4", "Elon Musk Group4"];
+
+let groups  = ["Gold Group", "Diamond Group", "Platinum Group", "Kings Group", "Queens Group", "Nelson Mandela Group", "M. L. King Group", "Elon Musk Group","Gold Group2", "Diamond Group2", "Platinum Group2", "Kings Group2", "Queens Group2", "Nelson Mandela Group2", "M. L. King Group2", "Elon Musk Group2", "Gold Group3", "Diamond Group3", "Platinum Group3", "Kings Group3", "Queens Group3", "Nelson Mandela Group3", "M. L. King Group3", "Elon Musk Group3","Gold Group4", "Diamond Group4", "Platinum Group4", "Kings Group4", "Queens Group4", "Nelson Mandela Group", "M. L. King Group4", "Elon Musk Group4"];
+
+let groupsADMIN  = ["Gold Group", "Diamond Group", "Platinum Group", "Kings Group", "Queens Group", "Nelson Mandela Group", "M. L. King Group", "Elon Musk Group","Gold Group2", "Diamond Group2", "Platinum Group2", "Kings Group2", "Queens Group2", "Nelson Mandela Group2", "M. L. King Group2", "Elon Musk Group2", "Gold Group3", "Diamond Group3", "Platinum Group3", "Kings Group3", "Queens Group3", "Nelson Mandela Group3", "M. L. King Group3", "Elon Musk Group3","Gold Group4", "Diamond Group4", "Platinum Group4", "Kings Group4", "Queens Group4", "Nelson Mandela Group", "M. L. King Group4", "Elon Musk Group4"];
+
+let describe_groups = ["For Gold lovers","For Diamond lovers","For Platinum Group lovers"];
+
+let groupsA  = ["Gold Group", "Diamond Group", "Platinum Group", "Kings Group", "Queens Group", "Nelson Mandela Group", "M. L. King Group", "Elon Musk Group","Gold Group2", "Diamond Group2", "Platinum Group2", "Kings Group2", "Queens Group2", "Nelson Mandela Group2", "M. L. King Group2", "Elon Musk Group2", "Gold Group3", "Diamond Group3", "Platinum Group3", "Kings Group3", "Queens Group3", "Nelson Mandela Group3", "M. L. King Group3", "Elon Musk Group3","Gold Group4", "Diamond Group4", "Platinum Group4", "Kings Group4", "Queens Group4", "Nelson Mandela Group", "M. L. King Group4", "Elon Musk Group4"];
+
+let groupsB  = ["Gold Group", "Diamond Group", "Platinum Group", "Kings Group", "Queens Group", "Nelson Mandela Group", "M. L. King Group", "Elon Musk Group","Gold Group2", "Diamond Group2", "Platinum Group2", "Kings Group2", "Queens Group2", "Nelson Mandela Group2", "M. L. King Group2", "Elon Musk Group2", "Gold Group3", "Diamond Group3", "Platinum Group3", "Kings Group3", "Queens Group3", "Nelson Mandela Group3", "M. L. King Group3", "Elon Musk Group3","Gold Group4", "Diamond Group4", "Platinum Group4", "Kings Group4", "Queens Group4", "Nelson Mandela Group", "M. L. King Group4", "Elon Musk Group4"];
+
+all_members = [];
+
+all_members_Logs = [];
+
+var u_re_grped = document.getElementById("success");
+
+var UR_grp = document.getElementById("urGRP");
+
+var MBR_name = document.getElementById("name");
+
+var MBR_contact = document.getElementById("contact");
+
+var av_GRPS = document.getElementById("av_grps").innerHTML = "Avialable groups";
+
+//var Title_Event = document.getElementById("sHead").innerHTML = ;
+
+var total_Members = document.getElementById("gen_members").innerHTML = all_members.length + " people are already part of the " +groups.length +" avialable groups"
+
+var total_MembersAdmin = document.getElementById("gen_membersAdmin").innerHTML = groups.length +" Avialable groups"
+
+let change_AVAILname = document.getElementById (grp_Avial_Changename);
+
+var success_MSG_S = "Dear ";
+
+var success_MSG = ", you are officially wellcomed to "+ UR_grp.innerHTML + "."  ;
+
+//Pick A Group
+
+var inpi = document.getElementById("name");
+
+let rename_field = document.getElementById("rename_me");
+
+let select_OPTIONS = document.getElementById("options");
+
+
+
+
+
+var arr_0 = ["Tade Sagbe","Wike Sagbe"];
+
+var arr_1 = ["kemi Sagbe","Wike Sagbe"];
+
+var arr_2 = ["stella Sagbe","Wike Sagbe"];
+
+var arr_3 = ["baby Sagbe","Wike Sagbe"];
+
+var arr_4 = ["grace Sagbe","Wike Sagbe"];
+
+var arr_5 = ["Chisome Sagbe","Wike Sagbe"];
+
+var arr_6 = ["chinasa Sagbe","Wike Sagbe"];
+
+var arr_7 = ["Buhari Sagbe","Wike Sagbe"];
+
+var arr_8 = ["boss Sagbe","Wike Sagbe"];
+
+var arr_9 = ["love Sagbe","Wike Sagbe"];
+
+var arr_10 = ["Naija Sagbe","Wike Sagbe"];
+
+var arr_11 = ["swt Sagbe","Wike Sagbe"];
+
+var arr_12 = ["pulse Sagbe","Wike Sagbe"];
+
+var arr_13 = ["football Sagbe","Wike Sagbe"];
+
+var arr_14 = ["money Sagbe","Wike Sagbe"];
+
+var arr_15 = ["Boma Sagbe","Wike Sagbe"];
+
+var arr_16 = ["web Sagbe","Wike Sagbe"];
+
+var arr_17 = ["net Sagbe","Wike Sagbe"];
+
+var arr_18 = ["click Sagbe","Wike Sagbe"];
+
+var arr_19 = ["CNN Sagbe","Wike Sagbe"];
+
+var arr_20 = ["CBN Sagbe","Wike Sagbe"];
+
+var arr_21 = ["DOLLAR Sagbe","Wike Sagbe"];
+
+var arr_22 = ["POUNDS Sagbe","Wike Sagbe"];
+
+var arr_23 = ["EURO Sagbe","Wike Sagbe"];
+
+var arr_24 = ["USA Sagbe","Wike Sagbe"];
+
+var arr_25 = ["Barcelonia Sagbe","Wike Sagbe"];
+
+var arr_26 = ["MADRID Sagbe","Wike Sagbe"];
+
+var arr_27 = ["APPLE Sagbe","Wike Sagbe"];
+
+var arr_28 = ["ZOOM Sagbe","Wike Sagbe"];
+
+var arr_29 = ["TELSA Sagbe","Wike Sagbe"];
+
+var arr_30 = ["Facebook Sagbe"];
+
+
+
+
+
+//comeWith_BringTHIS
+//console.log(options.value.length-1)
+
+//Auto fill groupdescription
+
+
+
+
+//console.log(add_ABOUTgrps("Gold Group"))
+
+//about_groups
+
+
+
+const txtB = document.getElementById("textarea");
+
+const txtB2 = document.getElementById("kkk");
+
+const sel_box = document.getElementById("options");
+
+const EDT_GRPinfo = document.getElementById("about_groups");
+
+
+function rename_AllOPTIONSbx(){
+
+let xi = document.getElementById("options").selectedIndex;
+
+let yi = document.getElementById("options").options;
+
+let findINDEX = yi[xi].index;
+
+/*
+nuOPT.text = rename_field.value
+sel_box.add(nuOPT, sel_box[findINDEX]);
+sel_box.remove(sel_box[findINDEX]);
+*/
+
+sel_box[findINDEX].innerHTML = rename_field.value;
+
+
+console.log(sel_box[0].innerHTML);
+//doEdit();
+}
+
+
+function Edit_dAboutGRPS() {
+doEdit()
+
+//var text = document.createTextNode(txtB.value);
+//document.getElementById("display").appendChild(text );
+ let reply = "";
+  for (let i = 0; i < groups.length; i++) {
+    if (sel_box.value === groups[i]) {
+  
+ 
+  EDT_GRPinfo.value = describe_groups[i];
+    console.log(reply);
+
+
+  }
+  }
+}
+Edit_dAboutGRPS()
+
+
+
+function fill_RenameFields(){
+ sel_box.value.trim();
+
+
+rename_field.value = sel_box.value ;
+}
+
+function doEdit(){
+
+
+rename_field.value = sel_box.value ;
+
+
+}
+
+
+////////////SAVE GROUP INFO
+function save_grpInfo(){
+
+ImportantInfo()
+
+change_AvailGroups()
+
+change_eventDATES()
+
+change_CompName()
+
+change_event()
+
+}
+
+
+
+function add_COMPdecri(){
+
+if(admin_txt_comp.value !== ""){
+
+document.getElementById("About_THIScomp").innerHTML = admin_txt_comp.value ;
+}
+
+else{
+document.getElementById("About_THIScomp").innerHTML = "This grouping event is organised by the church of Nigeria";
+}
+}
+add_COMPdecri()
+admin_txt_comp.value = document.getElementById("About_THIScomp").innerHTML;
+
+
+
+function change_CompName(){
+
+if(grp_companynAME.value !== ""){
+
+document.getElementById("sHead").innerHTML = grp_companynAME.value ;
+}
+
+else{
+document.getElementById("sHead").innerHTML = "Church Of Nigeria ";
+}
+}
+change_CompName();
+
+grp_companynAME.value = document.getElementById("sHead").innerHTML;
+
+
+
+
+function change_event(){
+
+if(grp_event.value !== ""){
+
+document.getElementById("_Event").innerHTML = grp_event.value ;
+}
+
+else{
+document.getElementById("_Event").innerHTML = "Fund rasing for church building ";
+}
+}
+change_event();
+
+grp_event.value = document.getElementById("_Event").innerHTML;
+
+
+
+
+
+function change_eventDATES(){
+
+let COMPOSE_date = stating_DT.value;
+
+if(stating_DT.value !== "" ){
+
+document.getElementById("COUNT_down").innerHTML = COMPOSE_date ;
+}
+
+else{
+document.getElementById("COUNT_down").innerHTML = "25 June to 30th June 2022";
+}
+}
+change_eventDATES();
+stating_DT.value = document.getElementById("COUNT_down").innerHTML;
+
+
+
+function toggle_THIS(){
+
+if ( document.getElementById("dis_hidden").style.display === "none"){
+document.getElementById("dis_hidden").style.display = "block";
+}
+
+else{
+
+document.getElementById("dis_hidden").style.display = "none";
+}
+
+}
+
+function toggleoo_THIS(){
+
+if ( document.getElementById("doYOU_delete").style.display === "none"){
+document.getElementById("doYOU_delete").style.display = "block";
+}
+
+else{
+
+document.getElementById("doYOU_delete").style.display = "none";
+}
+
+}
+
+
+
+
+
+
+
+
+function HIDE_brk(){
+document.getElementById("BRK_BRK").style.display = "none";
+
+}
+
+
+function YES_OrNo(field){
+
+field.style.display = "block";
+
+HIDE_brk()
+
+}
+
+function _OrNo(field){
+
+
+field.style.display = "none";
+
+document.getElementById("BRK_BRK").style.display = "block";
+
+}
+
+//Edit groups
+
+
+//Using select to assign values to rename and co;
+
+
+
+
+
+
+function rename_MYgrp(){
+
+let get_grpIndx = groups.indexOf(sel_box.value);
+
+
+if (get_grpIndx > -1 && rename_field.value !== "" && sel_box.value !== "" ){
+groups.splice(get_grpIndx,1,rename_field.value)
+
+
+}
+else{
+alert("The rename text field is empty");
+return false;
+
+}
+rename_AllOPTIONSbx()
+//groups.splice(get_grpIndx,1)
+
+console.log(get_grpIndx)
+
+console.log(groups)
+
+console.log(rename_field.value)
+
+}
+
+
+function delete_MYgrp(){
+let get_grpIndxi = groups.indexOf(sel_box.value);
+
+//groups.splice(rename_field.value,1,rename_field.value)
+if (get_grpIndxi > -1){
+groups.splice(get_grpIndxi,1)
+}
+
+document.getElementById("doYOU_delete").style.display = "none";
+console.log(get_grpIndxi)
+
+console.log(groups)
+
+
+console.log(describe_groups)
+
+console.log(rename_field.value)
+
+
+
+
+}
+
+function del_SELBX_info(){
+sel_box.remove(sel_box.selectedIndex);
+}
+
+//////////////// 2 in 1
+function DEL_AboutgrpF(){
+
+EDT_GRPinfo.value = "";
+
+let edt_grpDesc =  groups.indexOf(sel_box.value);
+
+//const index = groups.findIndex(fruit => fruit === sel_box.value);
+//console.log(index +" hi");
+if(edt_grpDesc > -1 && rename_field.value !== "" && sel_box.value !== ""){
+describe_groups.splice(edt_grpDesc,1)
+}
+
+else{
+alert("There is nothing else to delete");
+
+return false;
+
+}
+console.log(describe_groups.indexOf(EDT_GRPinfo.value));
+delete_MYgrp()
+del_SELBX_info()
+Edit_dAboutGRPS()
+doEdit()
+console.log(describe_groups);
+
+console.log(groups);
+}
+
+
+function edit_grpCont(){
+
+let get_grpIndxedit = groups.indexOf(sel_box.value);
+
+let edt_grpDesc =  describe_groups.indexOf(EDT_GRPinfo.value);
+
+if (get_grpIndxedit > -1 && rename_field.value !== "" && sel_box.value !== "" && EDT_GRPinfo.value !==""){
+describe_groups.splice(get_grpIndxedit,1,EDT_GRPinfo.value)
+}
+
+else{
+alert("There is nothing left to replace")
+
+
+}
+
+//groups.splice(get_grpIndx,1)
+
+console.log(describe_groups)
+
+console.log(edt_grpDesc)
+
+console.log(EDT_GRPinfo.value)
+}
+
+
+
+grp_Avial_Changename.value = document.getElementById("av_grps").innerHTML;
+
+
+
+function change_AvailGroups(){
+
+if(grp_Avial_Changename.value !== ""){
+
+document.getElementById("av_grps").innerHTML = grp_Avial_Changename.value ;
+}
+
+else{
+document.getElementById("av_grps").innerHTML = "Available groups";
+}
+}
+change_AvailGroups()
+
+
+function use_PhoneContact(){
+
+if ( document.getElementById("use_phone").checked === true){
+
+document.getElementById("Phone_contact").style.display = "block";
+document.getElementById("yourGRP_brk1").style.display = "block";
+document.getElementById("yourGRP_brk2").style.display = "block";
+}
+else{
+
+document.getElementById("Phone_contact").style.display = "none";
+document.getElementById("yourGRP_brk1").style.display = "none";
+document.getElementById("yourGRP_brk2").style.display = "none";
+}
+
+}
+
+
+
+
+function use_otherFields(){
+
+if ( document.getElementById("otherflds").checked === true){
+document.getElementById("Name_otherFIELD").style.display = "block";
+document.getElementById("other_contact").style.display = "block";
+
+document.getElementById("oda_FLDbrk1").style.display = "block";
+
+}
+else{
+
+document.getElementById("other_contact").style.display = "none";
+document.getElementById("Name_otherFIELD").style.display = "none";
+
+document.getElementById("oda_FLDbrk1").style.display = "none";
+
+}
+
+}
+
+
+
+function hide_emailFields(){
+
+if ( document.getElementById("use_Email").checked === true){
+
+document.getElementById("contact").style.display = "none";
+
+document.getElementById("emailZ_brk1").style.display = "none"
+
+document.getElementById("emailZ_brk2").style.display = "none"
+}
+else{
+
+document.getElementById("contact").style.display = "block";
+
+document.getElementById("emailZ_brk1").style.display = "block"
+
+document.getElementById("emailZ_brk2").style.display = "block"
+}
+
+}
+
+
+function UseName_Only(){
+if ( document.getElementById("use_NAMEonly").checked === true){
+document.getElementById("contact").style.display = "none";
+
+document.getElementById("emailZ_brk1").style.display = "none";
+
+document.getElementById("emailZ_brk2").style.display = "none";
+
+document.getElementById("other_contact").style.display = "none";
+document.getElementById("Name_otherFIELD").style.display = "none";
+
+document.getElementById("oda_FLDbrk1").style.display = "none";
+
+document.getElementById("Phone_contact").style.display = "none";
+document.getElementById("yourGRP_brk1").style.display = "none";
+document.getElementById("yourGRP_brk2").style.display = "none";
+
+}
+
+else{
+
+document.getElementById("Phone_contact").style.display = "block";
+document.getElementById("yourGRP_brk1").style.display = "block";
+
+}
+
+}
+
+
+
+function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+  
+}
+
+
+
+
+function pick_A_grp(){
+
+
+shuffle(groups);
+
+
+
+let remove_1st = groups.shift();
+
+document.getElementById("urGRP").style.color = "black";
+let dis_ur_grp = document.getElementById("urGRP").innerHTML = remove_1st;
+
+let compose = MBR_name.value + ", " + MBR_contact.value;
+
+let Live_feeds = MBR_name.value +", "+ "Joined "  + dis_ur_grp + " on " + new Date().toLocaleString();
+
+
+
+all_members.push(compose);
+
+all_members_Logs.push(Live_feeds);
+
+//console.log(compose);
+
+//Generate live feed
+
+let msg_content = document.createTextNode(Live_feeds);
+
+let list = document.createElement("P")
+
+
+list.style.padding = "10px";
+
+list.style.background = "white";
+
+list.appendChild(msg_content);
+
+document.getElementById("gen_membersAdminxx").appendChild(list);
+
+counter++;
+
+
+//let gen_random_grps = groups[Math.floor(Math.random() * groups.length)];
+
+
+
+if (groups.length === 1){
+
+shuff = shuffle(groupsA);
+let re_shuff = shuffle(shuff)
+groups.push(...re_shuff);
+}
+
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[0])){
+
+arr_0.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[1])){
+
+arr_1.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[2])){
+
+arr_2.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[3])){
+
+arr_3.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[4])){
+
+arr_4.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[5])){
+
+arr_5.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[6])){
+
+arr_6.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[7])){
+
+arr_7.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[8])){
+
+arr_8.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[9])){
+
+arr_9.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[10])){
+
+arr_10.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[11])){
+
+arr_11.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[12])){
+
+arr_12.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[13])){
+
+arr_13.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[14])){
+
+arr_14.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[15])){
+
+arr_15.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[16])){
+
+arr_16.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[17])){
+
+arr_17.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[18])){
+
+arr_18.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[19])){
+
+arr_19.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[20])){
+
+arr_20.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[21])){
+
+arr_21.push(inpi.value);
+
+}
+if ( document.getElementById("urGRP").innerHTML === (groupsB[22])){
+
+arr_22.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[23])){
+
+arr_23.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[24])){
+
+arr_24.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[25])){
+
+arr_25.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[26])){
+
+arr_26.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[27])){
+
+arr_27.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[28])){
+
+arr_28.push(inpi.value);
+
+}
+
+if ( document.getElementById("urGRP").innerHTML === (groupsB[29])){
+
+arr_29.push(inpi.value);
+
+}
+
+show_sucess()
+
+document.getElementById("msg_counter").innerHTML = counter + " messages";
+
+
+
+
+
+
+
+console.log(arr_0 + " 1")
+console.log(arr_1 + " 2")
+console.log(arr_2 + " 3")
+console.log(arr_3 + " 4")
+console.log(arr_4 + " 5")
+console.log(arr_5 + " 6")
+console.log(arr_6 + " 7")
+console.log(arr_7 + " 8")
+console.log(arr_8 + " 9")
+console.log(arr_9 + " 10")
+console.log(arr_11 + " 11")
+console.log(arr_12 + " 12")
+console.log(arr_13 + " 13")
+console.log(arr_14 + " 14")
+console.log(arr_15 + " 15")
+console.log(arr_16 + " 16")
+console.log(arr_17 + " 17")
+console.log(arr_18 + " 18")
+console.log(arr_19 + " 19")
+console.log(arr_20 + " 20")
+console.log(arr_21 + " 21")
+console.log(arr_22 + " 22")
+console.log(arr_23 + " 23")
+console.log(arr_24 + " 24")
+console.log(arr_25 + " 25")
+console.log(arr_26 + " 26")
+console.log(arr_27 + " 27")
+console.log(arr_28 + " 28")
+console.log(arr_29 + " 29")
+console.log(arr_30 + " 30")
+
+console.log(groups)
+
+}
+
+
+function clear_allLvfeeds(){
+
+document.getElementById("gen_membersAdminxx").innerHTML = "";
+
+counter = 0;
+
+document.getElementById("msg_counter").innerHTML = "";
+
+}
+
+
+
+//refs the customfield input.
+
+//Creategroups()
+ let first_msg = "";
+ let Sec_msgFinal = "";
+ 
+  let thirdMsg_nCo = "";
+  
+  Wellcome_MsgSucess = "Odogwu <name>, how far na?. You are Officially wellcomed to <Group>. Bring a bottle of anointing oil and 1 million naira when coming. Also bring ur babes naked" ;
+  
+  admin_txt_B_Success.value = Wellcome_MsgSucess;
+  
+  
+  
+function Edit_SucessMSG(){
+
+Wellcome_MsgSucess.replace(Wellcome_MsgSucess,admin_txt_B_Success.value)
+ 
+Wellcome_Msg = admin_txt_B_Success.value;
+ 
+ //console.log(admin_txt_B_Success.value = Wellcome_Msg);
+
+
+//let get_Adminsucex_text =  admin_txt_B_Success.value;
+
+
+ //console.log(get_Adminsucex_text + " hi");
+ 
+
+ 
+let salute_msg = Wellcome_Msg;
+
+ //console.log(salute_msg);
+
+
+let Second_Msg = salute_msg.substring(salute_msg.lastIndexOf('e>') + 2)
+
+ //console.log(Second_Msg);
+ 
+ thirdMsg_nCo = Second_Msg.substring(Second_Msg.lastIndexOf('p>')+ 2 )
+ 
+ //console.log(thirdMsg_nCo);
+ 
+ 
+first_msg = salute_msg.replace(Second_Msg," ").replace("<name>","");
+
+ //console.log(first_msg);
+ 
+ Sec_msgFinal = Second_Msg.replace(thirdMsg_nCo," ").replace(" <Group>","");
+ 
+
+
+
+
+}
+
+//Edit_SucessMSG()
+
+
+
+function show_sucess(){
+
+document.getElementById("success").style.display = "block";
+//document.getElementById("success_INNER").innerHTML = first_msg
+document.getElementById("success_INNER").innerHTML = "<h2>"+ "Wellcome to " +UR_grp.innerHTML+ "</h2>" + "<br>" + "<div>" + first_msg + MBR_name.value +Sec_msgFinal+UR_grp.innerHTML + thirdMsg_nCo + "</div>" ;
+}
+
+
+function close_sucess(){
+document.getElementById("success").style.display = "none";
+}
+
+
+
+// Loop All The Groups
+/*function see_grps(){
+let shw_grps = "";
+for (let g = 0; g < groupsSEE.length; g++){
+
+shw_grps += "&#9899 " + groupsSEE[g] + "<br>";
+
+
+
+}
+document.getElementById("list_grps").innerHTML = shw_grps;
+}
+see_grps()
+
+
+//Pick a group
+*/
+
+function All_gps(){
+
+if (arr_0.length > 0){
+document.getElementById("SEE_dGrps1").style.display = "block";
+
+document.getElementById("SEE_dGrps1").innerHTML = "&#9899 " + groups[0] + "&nbsp " +"<small>" + arr_0.length  +" members" +"</small>";
+
+document.getElementById("SEE_dGrpsADMIN1").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN1").innerHTML = "&#9899 " + groups[0] + "&nbsp  " +"<small>" + arr_0.length +" members" +"</small>";
+
+}
+
+if (arr_1.length > 0){
+
+document.getElementById("SEE_dGrps2").style.display = "block";
+
+document.getElementById("SEE_dGrps2").innerHTML = "&#9899 " + groups[1] + "&nbsp " + "<small>" + arr_1.length +" members"+"</small>";
+
+document.getElementById("SEE_dGrpsADMIN2").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN2").innerHTML = "&#9899 " + groups[1] + "&nbsp  " +"<small>" + arr_1.length +" members" +"</small>";
+}
+
+if (arr_2.length > 0){
+
+document.getElementById("SEE_dGrps3").style.display = "block";
+
+document.getElementById("SEE_dGrps3").innerHTML = "&#9899 " + groups[2] + "&nbsp " + "<small>" + arr_2.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN3").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN3").innerHTML = "&#9899 " + groups[2] + "&nbsp  " +"<small>" + arr_2.length +" members" +"</small>";
+}
+
+if (arr_3.length > 0){
+
+document.getElementById("SEE_dGrps4").style.display = "block";
+
+document.getElementById("SEE_dGrps4").innerHTML = "&#9899 " + groups[3] + "&nbsp " + "<small>" + arr_3.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN4").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN4").innerHTML = "&#9899 " + groups[3] + "&nbsp  " +"<small>" + arr_3.length +" members" +"</small>";
+}
+
+if (arr_4.length > 0){
+
+document.getElementById("SEE_dGrps5").style.display = "block";
+
+document.getElementById("SEE_dGrps5").innerHTML = "&#9899 " + groups[4] + "&nbsp " + "<small>" + arr_4.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN5").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN5").innerHTML = "&#9899 " + groups[4] + "&nbsp  " +"<small>" + arr_4.length +" members" +"</small>";
+}
+
+if (arr_5.length > 0){
+
+document.getElementById("SEE_dGrps6").style.display = "block";
+
+document.getElementById("SEE_dGrps6").innerHTML = "&#9899 " + groups[5] + "&nbsp " + "<small>" + arr_5.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN6").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN6").innerHTML = "&#9899 " + groups[5] + "&nbsp  " +"<small>" + arr_5.length +" members" +"</small>";
+}
+
+if (arr_6.length > 0){
+
+document.getElementById("SEE_dGrps7").style.display = "block";
+
+document.getElementById("SEE_dGrps7").innerHTML = "&#9899 " + groups[6] + "&nbsp " + "<small>" + arr_6.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN7").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN7").innerHTML = "&#9899 " + groups[6] + "&nbsp  " +"<small>" + arr_6.length +" members" +"</small>";
+}
+
+if (arr_7.length > 0){
+
+document.getElementById("SEE_dGrps8").style.display = "block";
+
+document.getElementById("SEE_dGrps8").innerHTML = "&#9899 " + groups[7] + "&nbsp " + "<small>" + arr_7.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN8").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN8").innerHTML = "&#9899 " + groups[7] + "&nbsp  " +"<small>" + arr_7.length +" members" +"</small>";
+}
+
+if (arr_8.length > 0){
+
+document.getElementById("SEE_dGrps9").style.display = "block";
+
+document.getElementById("SEE_dGrps9").innerHTML = "&#9899 " + groups[8] + "&nbsp " + "<small>" + arr_8.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN9").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN9").innerHTML = "&#9899 " + groups[8] + "&nbsp  " +"<small>" + arr_8.length +" members" +"</small>";
+}
+
+if (arr_9.length > 0){
+
+document.getElementById("SEE_dGrps10").style.display = "block";
+
+document.getElementById("SEE_dGrps10").innerHTML = "&#9899 " + groups[9] + "&nbsp " + "<small>" + arr_9.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN10").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN10").innerHTML = "&#9899 " + groups[9] + "&nbsp  " +"<small>" + arr_9.length +" members" +"</small>";
+}
+
+if (arr_10.length > 0){
+
+document.getElementById("SEE_dGrps11").style.display = "block";
+
+document.getElementById("SEE_dGrps11").innerHTML = "&#9899 " + groups[10] + "&nbsp " + "<small>" + arr_10.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN11").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN11").innerHTML = "&#9899 " + groups[10] + "&nbsp  " +"<small>" + arr_10.length +" members" +"</small>";
+}
+
+if (arr_11.length > 0){
+
+document.getElementById("SEE_dGrps12").style.display = "block";
+
+document.getElementById("SEE_dGrps12").innerHTML = "&#9899 " + groups[11] + "&nbsp " + "<small>" + arr_11.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN12").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN12").innerHTML = "&#9899 " + groups[11] + "&nbsp  " +"<small>" + arr_11.length +" members" +"</small>";
+}
+
+if (arr_12.length > 0){
+
+document.getElementById("SEE_dGrps13").style.display = "block";
+
+document.getElementById("SEE_dGrps13").innerHTML = "&#9899 " + groups[12] + "&nbsp " + "<small>" + arr_12.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN13").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN13").innerHTML = "&#9899 " + groups[12] + "&nbsp  " +"<small>" + arr_12.length +" members" +"</small>";
+}
+
+if (arr_13.length > 0){
+
+document.getElementById("SEE_dGrps14").style.display = "block";
+
+document.getElementById("SEE_dGrps14").innerHTML = "&#9899 " + groups[13] + "&nbsp " + "<small>" + arr_13.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN14").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN14").innerHTML = "&#9899 " + groups[13] + "&nbsp  " +"<small>" + arr_13.length +" members" +"</small>";
+}
+
+if (arr_14.length > 0){
+
+document.getElementById("SEE_dGrps15").style.display = "block";
+
+document.getElementById("SEE_dGrps15").innerHTML = "&#9899 " + groups[14] + "&nbsp " + "<small>" + arr_14.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN15").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN15").innerHTML = "&#9899 " + groups[14] + "&nbsp  " +"<small>" + arr_14.length +" members" +"</small>";
+}
+
+if (arr_15.length > 0){
+
+document.getElementById("SEE_dGrps16").style.display = "block";
+
+document.getElementById("SEE_dGrps16").innerHTML = "&#9899 " + groups[15] + "&nbsp " + "<small>" + arr_15.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN16").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN16").innerHTML = "&#9899 " + groups[15] + "&nbsp  " +"<small>" + arr_15.length +" members" +"</small>";
+}
+
+if (arr_16.length > 0){
+
+document.getElementById("SEE_dGrps17").style.display = "block";
+
+document.getElementById("SEE_dGrps17").innerHTML = "&#9899 " + groups[16] + "&nbsp " + "<small>" + arr_16.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN17").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN17").innerHTML = "&#9899 " + groups[16] + "&nbsp  " +"<small>" + arr_16.length +" members" +"</small>";
+}
+
+if (arr_17.length > 0){
+
+document.getElementById("SEE_dGrps18").style.display = "block";
+
+document.getElementById("SEE_dGrps18").innerHTML = "&#9899 " + groups[17] + "&nbsp " + "<small>" + arr_17.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN18").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN18").innerHTML = "&#9899 " + groups[17] + "&nbsp  " +"<small>" + arr_17.length +" members" +"</small>";
+}
+
+if (arr_18.length > 0){
+
+document.getElementById("SEE_dGrps19").style.display = "block";
+
+document.getElementById("SEE_dGrps19").innerHTML = "&#9899 " + groups[18] + "&nbsp " + "<small>" + arr_18.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN19").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN19").innerHTML = "&#9899 " + groups[18] + "&nbsp  " +"<small>" + arr_18.length +" members" +"</small>";
+}
+
+if (arr_19.length > 0){
+
+document.getElementById("SEE_dGrps20").style.display = "block";
+
+document.getElementById("SEE_dGrps20").innerHTML = "&#9899 " + groups[19] + "&nbsp " + "<small>" + arr_19.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN20").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN20").innerHTML = "&#9899 " + groups[19] + "&nbsp  " +"<small>" + arr_19.length +" members" +"</small>";
+}
+
+if (arr_20.length > 0){
+
+document.getElementById("SEE_dGrps21").style.display = "block";
+
+document.getElementById("SEE_dGrps21").innerHTML = "&#9899 " + groups[20] + "&nbsp " + "<small>" + arr_20.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN21").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN21").innerHTML = "&#9899 " + groups[20] + "&nbsp  " +"<small>" + arr_20.length +" members" +"</small>";
+}
+
+if (arr_21.length > 0){
+
+document.getElementById("SEE_dGrps22").style.display = "block";
+
+document.getElementById("SEE_dGrps22").innerHTML = "&#9899 " + groups[21] + "&nbsp " + "<small>" + arr_21.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN22").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN22").innerHTML = "&#9899 " + groups[21] + "&nbsp  " +"<small>" + arr_21.length +" members" +"</small>";
+}
+
+if (arr_22.length > 0){
+
+document.getElementById("SEE_dGrps23").style.display = "block";
+
+document.getElementById("SEE_dGrps23").innerHTML = "&#9899 " + groups[22] + "&nbsp " + "<small>" + arr_22.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN23").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN23").innerHTML = "&#9899 " + groups[22] + "&nbsp  " +"<small>" + arr_22.length +" members" +"</small>";
+}
+
+if (arr_23.length > 0){
+
+document.getElementById("SEE_dGrps24").style.display = "block";
+
+document.getElementById("SEE_dGrps24").innerHTML = "&#9899 " + groups[23] + "&nbsp " + "<small>" + arr_23.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN24").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN24").innerHTML = "&#9899 " + groups[23] + "&nbsp  " +"<small>" + arr_23.length +" members" +"</small>";
+}
+
+if (arr_24.length > 0){
+
+document.getElementById("SEE_dGrps25").style.display = "block";
+
+document.getElementById("SEE_dGrps25").innerHTML = "&#9899 " + groups[24] + "&nbsp " + "<small>" + arr_24.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN25").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN25").innerHTML = "&#9899 " + groups[24] + "&nbsp  " +"<small>" + arr_24.length +" members" +"</small>";
+}
+
+if (arr_25.length > 0){
+
+document.getElementById("SEE_dGrps26").style.display = "block";
+
+document.getElementById("SEE_dGrps26").innerHTML = "&#9899 " + groups[25] + "&nbsp " + "<small>" + arr_25.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN26").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN26").innerHTML = "&#9899 " + groups[25] + "&nbsp  " +"<small>" + arr_25.length +" members" +"</small>";
+}
+
+if (arr_26.length > 0){
+
+document.getElementById("SEE_dGrps27").style.display = "block";
+
+document.getElementById("SEE_dGrps27").innerHTML = "&#9899 " + groups[26] + "&nbsp " + "<small>" + arr_26.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN27").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN27").innerHTML = "&#9899 " + groups[26] + "&nbsp  " +"<small>" + arr_26.length +" members" +"</small>";
+}
+
+if (arr_27.length > 0){
+
+document.getElementById("SEE_dGrps28").style.display = "block";
+
+document.getElementById("SEE_dGrps28").innerHTML = "&#9899 " + groups[27] + "&nbsp " + "<small>" + arr_27.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN28").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN28").innerHTML = "&#9899 " + groups[27] + "&nbsp  " +"<small>" + arr_27.length +" members" +"</small>";
+}
+
+if (arr_28.length > 0){
+
+document.getElementById("SEE_dGrps29").style.display = "block";
+
+document.getElementById("SEE_dGrps29").innerHTML = "&#9899 " + groups[28] + "&nbsp " + "<small>" + arr_28.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN29").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN29").innerHTML = "&#9899 " + groups[28] + "&nbsp  " +"<small>" + arr_28.length +" members" +"</small>";
+}
+
+if (arr_29.length > 0){
+
+document.getElementById("SEE_dGrps30").style.display = "block";
+
+document.getElementById("SEE_dGrps30").innerHTML = "&#9899 " + groups[29] + "&nbsp " + "<small>" + arr_29.length + " members" + "</small>";
+
+document.getElementById("SEE_dGrpsADMIN30").style.display = "block";
+
+document.getElementById("SEE_dGrpsADMIN30").innerHTML = "&#9899 " + groups[29] + "&nbsp  " +"<small>" + arr_29.length +" members" +"</small>";
+}
+Edit_SucessMSG();
+}
+
+All_gps()
+
+
+
+//////Function Create group
+
+let About_groupINFO = [];
+
+function Create_URgroup(){
+
+let OnlyGrp_Name = grp_name.value;
+
+let Groupz_Info = admin_txt_B.value;
+
+let grpNa_me = grp_name.value + " , " + admin_txt_B.value;
+
+groups.push(OnlyGrp_Name);
+
+groupsA.push(OnlyGrp_Name);
+
+groupsB.push(OnlyGrp_Name);
+
+groupsSEE.push(OnlyGrp_Name);
+
+ About_groupINFO.push(grpNa_me);
+ 
+ describe_groups.push(admin_txt_B.value);
+ 
+ console.log(groupsSEE);
+ 
+ 
+ 
+ 
+ 
+  let selection_F = document.getElementById("options");
+  
+  let create_dS_F = document.createElement("option");
+  
+  create_dS_F.text = grp_name.value;
+  
+  selection_F.add(create_dS_F);
+  doEdit()
+ 
+ /*
+let Header_content = document.createTextNode(OnlyGrp_Name);
+
+let body_content = document.createTextNode(Groupz_Info);
+
+let hTAG = document.createElement("div")
+
+
+let x = hTAG.appendChild(Header_content);
+
+let create_para = document.createElement("P");
+
+  create_para.padding = "20px";
+  
+   create_para.padding.left = "50px";
+
+  create_para.style.background = "white";
+
+  create_para.appendChild(hTAG)
+
+  create_para.appendChild(body_content);
+
+
+
+document.getElementById("About_EVERYgroup").appendChild(create_para);
+
+*/
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function shownHide(){
+
+if ( document.getElementById("success1").style.width = (98 + "%") ){
+
+document.getElementById("success1").style.width = 15 + "%";
+
+document.getElementById("success1").style.height = 65 + "px";
+
+document.getElementById("success1").style.left = 10 + "px";
+
+document.getElementById("success1").style.top = 550 + "px";
+
+document.getElementById("success1").style.resize = "none";
+
+
+
+//document.getElementById("Admin_control").style.width = 100 + "%";
+
+//document.getElementById("Admin_control").style.height = 76 + "px";
+
+document.getElementById("Admin_control").style.display = "none";
+
+document.getElementById("small_admin").style.display = "block";
+
+document.getElementById("small_admin").style.height = 66 + "px";
+
+document.getElementById("hide").style.display = "none";
+document.getElementById("show").style.display = "block";
+}
+
+
+}
+
+
+
+
+function close_it(){
+
+if (document.getElementById("success1").style.display = "block"){
+document.getElementById("success1").style.display = "none";
+}
+}
+
+function SHOW(){
+document.getElementById("success1").style.width = 100 + "%";
+
+document.getElementById("success1").style.height = 600 + "px";
+
+document.getElementById("success1").style.left = 1 + "px";
+
+document.getElementById("success1").style.top = 10 + "px";
+
+document.getElementById("success1").style.resize = "block";
+
+//document.getElementById("hide").innerHTML = "show";
+
+//document.getElementById("Admin_control").style.width = 100 + "%";
+
+//document.getElementById("Admin_control").style.height = 76 + "px";
+
+document.getElementById("Admin_control").style.display = "block";
+
+document.getElementById("small_admin").style.display = "none";
+
+//document.getElementById("small_admin").style.height = 66 + "px";
+
+
+//document.getElementById("hide").innerHTML = "hide";
+
+document.getElementById("show").style.display = "none";
+document.getElementById("hide").style.display = "block";
+
+}
+
+
+
+function Creategroups(){
+if(document.getElementById("success1").style.width = (15 + "%")){
+document.getElementById("success1").style.display = "block";
+SHOW()
+}
+else{
+document.getElementById("success1").style.display = "block";
+document.getElementById("success1").style.left = 14 + "px";
+}
+}
+Creategroups()
+
+
+function ImportantInfo(){
+
+document.getElementById("comeWith_BringTHIS").innerHTML = admin_txt_BVIP.value;
+
+}
+
+admin_txt_BVIP.value = document.getElementById("comeWith_BringTHIS").innerHTML;
+
+
+
+// Reset the custom field
+
+function reset_custMSG(){
+document.getElementById("admin_txt_B_Success").value = "Odogwu <name>, how far na?. You are Officially wellcomed to <Group>. Bring a bottle of anointing oil and 1 million naira when coming. Also bring ur babes naked";
+
+}
+
+
+
+
+</script>
+</html>

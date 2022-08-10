@@ -1,0 +1,1170 @@
+@media only screen and (max-width: 930px) {
+   
+  #urGRP{
+    font-size:30px;
+    width:90%;
+    height:50px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:1vw;
+    }
+  .form{
+    width: 90%;
+    height:50px;
+    font-size:25px;
+  }
+   
+  #pick_BTN{
+    height:100px;
+    width:90%;
+    font-size:35px;
+    }
+
+    #pick_BTN:hover{
+      color: rgb(249, 251, 252);
+      background-color: rgb(31, 30, 30);
+      transition: 0.5s;
+
+    }
+    #av_grps{
+     word-break: break-word;
+    border: 1px solid rgb(255, 252, 252);
+    width:90%;
+    height:50px;
+    text-align:center;
+    font-size:30px;
+    overflow:auto; 
+    padding-bottom: 0px;
+    border-style: dashed;
+    padding-top: 1vw;
+    font-family: '';
+    text-shadow: 0 0 2px #116b8fcb;
+    box-shadow: 0 0 2pt 0.5pt #1f95b3;
+    color:rgb(255, 255, 255)
+    
+    }
+    #list_grps{
+    overflow:auto;
+    border: groove;
+    border: 0px solid grey;
+    width:90%;
+    height:210px;
+    word-break: break-word;
+    font-style:normal;
+    text-align:left;
+    font-size:18px;
+    background-color :;
+    padding-bottom:30px;
+    scrollbar-width: thin;
+    scrollbar-color: #1ea7f7 #f3f3f3;
+    font-family: '';
+}
+.motherDiv{
+  background-color: rgb(34, 34, 39);
+  width:600px ;
+  height: auto;
+  margin-bottom: 20px;
+}
+.topHeaderDiv{
+  background-color: rgb(30, 30, 32);
+  width: 100%;
+  padding-top: 10px;
+  font-size: 20px;
+  color: rgb(66, 170, 211);
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+/*For mobile screens*/
+
+@media only screen and (max-width: 550px) {
+  *{
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin:0px;  
+    background-color: rgb(43, 163, 212);
+    color: rgb(245, 246, 247);
+  
+   
+  }
+  
+  #heading{
+  margin-left: 5px;
+  margin-bottom: 8px;
+  text-align:left;
+  
+  }
+  
+   h1,h4,h5,h2{
+   
+  overflow:auto;
+  margin:0px auto;
+  padding:0px auto;
+  text-align:center
+   }
+  h4{
+  font-weight:;
+   }
+   h5{
+  font-weight:normal;
+   }
+   
+  table, th, td {
+    border:0px solid black;
+  }
+  .Htable{
+  width:100%;
+  height: 60px;
+  border: 0px;
+  background-color: rgb(34, 34, 39);
+  background-image: url('blackBG.PNG')no-repeat center center;
+  z-index: 5;
+  }
+
+  #poweredBy{
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top:1px ;
+    padding-bottom:3px ;
+    width: 182px;
+    border: 1px solid rgb(253, 249, 249);
+    border-radius: 50px;
+    border-top-style: dashed;
+  }
+  
+  footer{
+  width: 100%;
+  height: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 70px;
+  background-color: #242525;
+  
+  }
+  #fotabrk{
+    display: block;
+  }
+  .form{
+    width:95%;
+    height:40px;
+    font-size:20px;
+    margin-bottom: 20px;
+    border:0px solid rgb(136, 136, 136);
+    border-radius: 0px;
+    padding-left: 10px;
+    box-shadow: 0 0 5pt 0.5pt #1f95b3;
+    }
+    
+    #sHead{
+    text-align:center;
+    padding-left:5px;
+    padding-right:5px;
+    word-break: break-word;
+    font-family: 'Timmana';font-size:30px;
+    color: rgb(240, 243, 247);
+    font-size: 20px;
+    }
+    #gen_members{
+    text-align:center;
+    border:0px solid grey;
+    padding-left:5px;
+    padding-right:5px;
+    word-break: break-word;
+    width: 90%;
+    font-size: 13px;
+    margin: auto;
+    }
+    
+    #COUNT_down{
+     text-align:center;
+    border:0px solid grey;
+    width: 80%;
+    margin: auto;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top: 2vw;
+    margin-top: -5px;
+    word-break: break-word;
+    color: rgb(209, 208, 208);
+    
+    }
+    
+    #pick_BTN{
+    height:100px;
+    width:95%;
+    font-size:30px;
+    color: rgb(238, 238, 238);
+    border: 0px solid grey;
+    background-color: rgb(34, 34, 39);
+    box-shadow: 0 0 5pt 0.5pt #1fa1c2;
+    }
+
+    #pick_BTN:hover{
+      color: rgb(249, 251, 252);
+      background-color: rgb(31, 30, 30);
+      transition: 0.5s;
+
+    }
+    #av_grps{
+     word-break: break-word;
+    border: 1px solid rgb(255, 252, 252);
+    width:95%;
+    height:40px;
+    text-align:center;
+    font-size:25px;
+    overflow:auto; 
+    padding-bottom: 0px;
+    border-style: dashed;
+    padding-top: 5px;
+    font-family: '';
+    text-shadow: 0 0 2px #116b8fcb;
+    box-shadow: 0 0 2pt 0.5pt #1f95b3;
+    color:rgb(255, 255, 255)
+    
+    }
+    #list_grps{
+    overflow:auto;
+    border: groove;
+    border: 0px solid grey;
+    width:95%;
+    height:210px;
+    word-break: break-word;
+    font-style:normal;
+    text-align:left;
+    font-size:18px;
+    padding-bottom:30px;
+    scrollbar-width: thin;
+    scrollbar-color: #1ea7f7 #f3f3f3;
+    font-family: '';
+    }
+    #list_grps::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    #list_grps::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    #list_grps::-webkit-scrollbar-thumb {
+      background: #30bee9; 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    #list_grps::-webkit-scrollbar-thumb:hover {
+      background: #fffeff; 
+      transition: 0.5s;
+      transition-timing-function: ease-in;
+    }
+  
+     #success1{
+    transition:0.2s;
+    width:98%;
+    height:700px;
+    background-color :rgb(34, 34, 39);
+    color:rgb(119, 205, 240);
+    position: absolute; top: 30px;left: -1260px;
+    word-break: break-word;padding-bottom:10px;  
+    resize: both;
+    scrollbar-width: thin;
+    scrollbar-color: #1ea7f7 #f3f3f3;
+    }
+    
+    #success{
+    transition:0.2s;
+    border: 0px solid rgb(53, 62, 66);
+    background-color :rgb(34, 34, 39);
+    position: absolute;
+     top: 140px;
+     left: 6px;
+     height: 63%;
+     width: 95%;
+    word-break: break-word;padding-bottom:10px;  
+    display:none;
+    
+    }
+    
+    #Admin_control{
+    overflow: auto;
+    width:100%;
+    height:678px;
+    padding-bottom: 70px;
+    border-bottom: 50px solid rgba(81, 183, 224, 0.678);
+    scrollbar-width: thin;
+    scrollbar-color: #1ea7f7 #f3f3f3;
+  
+    }
+    #Admin_control::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    #Admin_control::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    #Admin_control::-webkit-scrollbar-thumb {
+      background: #30bee9; 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    #Admin_control::-webkit-scrollbar-thumb:hover {
+      background: #fffeff; 
+      transition: 0.5s;
+      transition-timing-function: ease-in;
+      
+      
+    }
+    
+    #shw_Admin{
+    transition:0.2s;
+    width:10%;
+    height:500px;
+    border: 1px solid grey;
+    background-color :;
+    position: absolute; top: 100px;left: 70px;
+    
+    }
+    
+    #sucess_BODY{
+    width:97%;
+    height:250px;
+    border: 0px solid grey;
+    word-break: break-word;
+    overflow:auto;
+    text-align:left;
+    }
+    
+    .sucessBTNS{
+    width:30%;
+    height:50px;
+    font-size:18px;
+    background-color: rgba(26, 73, 112, 0.103);
+    border:1px solid  rgb(26, 74, 112);
+    color: rgb(64, 152, 224);
+    
+    }
+    .sucessBTNS:hover{
+      background-color: rgba(26, 73, 112, 0.486);
+      color: rgb(74, 172, 252);
+      transition: 0.5s;
+      }
+      #close{
+        float:right;
+        background-color: rgba(43, 164, 212, 0.226);
+        border:1px solid rgb(71, 186, 231) ;
+        border-radius: 2px;
+        padding-top: 2px;
+        padding-bottom: 2.7px;
+        color:rgb(244, 247, 250);
+        text-shadow: 0 0 2px #33a1cccb;
+        }
+        #close:hover{
+          box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.507);
+          background-color: rgb(71, 186, 231);
+          transition: 0.5s;
+        }
+       
+        #hide{
+          float:right;
+          background-color: rgba(43, 164, 212, 0.226);
+          border:1px solid rgb(71, 186, 231) ;
+          border-radius: 2px;
+          padding-top: 2px;
+          padding-bottom: 2.7px;
+          margin-right: 1px;
+          color:rgb(248, 249, 250);
+          text-shadow: 0 0 2px #1478a0cb;
+          }
+          #hide:hover{
+            box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.507);
+            background-color: rgb(71, 186, 231);
+            transition: 0.5s;
+          }
+          #show{
+          float:right;
+          background-color: rgba(43, 164, 212, 0.226);
+          border:1px solid rgb(71, 186, 231) ;
+          border-radius: 2px;
+          padding-top: 2px;
+          padding-bottom: 2.7px;
+          margin-right: 1px;
+          color:rgb(248, 249, 250);
+          text-shadow: 0 0 2px #1478a0cb;
+          }
+          #show:hover{
+            box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.507);
+            background-color: rgb(71, 186, 231);
+            transition: 0.5s;
+          }
+   
+    #success_INNER{
+    overflow:auto;
+    width:98%;
+    height:280px;
+    padding-left:0px;
+    word-break: break-word;
+    border:0px solid rgb(1, 43, 1);
+    margin: auto;height: 328px;
+    margin-top: 10px;
+    color: rgb(66, 170, 211);
+    }
+    
+    #grp_discription{
+     width:100%;
+    
+    border: 1px solid grey;
+    
+    }
+    #grp_discription_INNER{
+   
+    padding-left:20px;
+    padding-right:20px;
+    word-break: break-word;
+    overflow:auto;
+    padding-bottom:40px;
+    padding-top:30px;
+    border: 1px solid grey;
+    height:800px;
+    
+    }
+    
+    #grp_members_INNER{
+   
+   width:100%;
+    
+    border: 1px solid grey;
+    
+    }
+    
+    a{
+  text-decoration : none
+  
+  }
+  
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+ 
+  #av_g{
+  
+  float: left;
+    width: 100%;
+    padding: 10px;
+     border:0px solid grey;
+     height: auto;
+     max-height:352px;
+  }
+  
+  
+  #spangrp:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  #dash_brdnn,#bb{
+  float: left;
+    width: 100%;
+    padding: 10px;
+     border:0px solid grey;
+     height: 352px;
+     
+  }
+  
+   #mobile_h{
+     display:none;
+    text-align:center;
+    
+    }
+    
+    #mobile_menu{
+     display:none;
+    }
+  
+  #urGRP{
+  font-size:25px;
+  border:1px solid rgb(255, 253, 253);
+     word-break: break-word;
+        padding-left:5px;
+        padding-right:5px;
+        padding-top:5px;
+        width:95%;
+        color:rgb(251, 254, 255);
+        border-style: dashed;
+        height:40px;
+        font-family: '';
+        text-shadow: 0 0 2px #116b8fcb;
+        box-shadow: 0 0 2pt 0.5pt #1f95b3;
+  }
+  
+   .m_brk{
+    display:none;
+    }
+    
+    
+     #grp_name{
+    width:95%;
+    height:40px;
+    font-size:17px;
+    }
+    
+    .admim_form{
+    width:95%;
+    height:40px;
+    font-size:17px;
+    
+    }
+    
+    #admin_txt_B{
+    width:95%;
+    height:200px;
+    
+    }
+    
+     #admin_txt_B_Success{
+    width:95%;
+    height:200px;
+    
+    }
+    
+     #admin_txt_BVIP{
+    width:95%;
+    height:200px;
+    
+    }
+    
+    .date{
+    width:95%;
+    height:40px;
+    font-size:17px;
+    }
+    
+    .rename_dat{
+    width:47%;
+    height:40px;
+    font-size:17px;
+    }
+    
+    .edit_btn{
+    height:40px;
+    width:47.7%;
+    }
+
+    #delOrNot{
+      font-size: 12px;
+    }
+    
+
+   #_Event{
+    text-align:center;
+    padding-left:5px;
+    padding-right:5px;
+    word-break: break-word;
+    width: 100%;
+    height:auto ;
+    margin:auto;
+    font-family: 'Galada';font-size: 20px;
+    text-shadow: 0 0 0px #116b8fcb;
+    color: rgb(255, 255, 255);
+    }
+    
+    #event{
+    text-align:center;
+    border:1px solid grey;
+    padding-left:5px;
+    padding-right:5px;
+    word-break: break-word;
+    }
+    
+    #admin_create_Grp{
+     height:80px;
+    width:95%;
+    font-size:30px;
+    }
+    #av_grpsAdmin{
+     word-break: break-word;
+    border: 0px solid grey;
+    width:60%;
+     height:50px;
+    text-align:center;
+    font-size:30px;
+    }
+    #list_grpsAdmin{
+    overflow:auto;
+    border: groove;
+    border: 0px solid grey;
+    width:58%;
+    height:250px;
+    word-break: break-word;
+    font-style:normal;
+    text-align:left;
+    font-size:18px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-bottom:40px;
+    padding-top:0px;
+    }
+    
+    #grp_discription{
+     width:100%;
+    
+    border: 1px solid grey;
+    
+    }
+    #grp_discription_INNER{
+   
+    padding-left:20px;
+    padding-right:20px;
+    word-break: break-word;
+    overflow:auto;
+    padding-bottom:40px;
+    padding-top:30px;
+    border: 1px solid grey;
+    height:800px;
+    
+    }
+    
+    #grp_members_INNER{
+   width:100%;
+    border: 1px solid grey;
+    }
+    #public_view{
+     height:10px;
+     width:10px;
+    font-size:50px;
+    float:left;
+    }
+    
+    #save_msg{
+    height:70px;
+     width:95%;
+    font-size:20px;
+    }
+    
+    #show_grps{
+    height:50px;
+     width:80%;
+    font-size:20px;
+    }
+    
+     #admin_txt_comp{
+    width:95%;
+    height:135px;
+    
+    }
+    .showBorder{
+      border-right:1px solid grey;
+    }
+
+    #totalMemberDB{
+    height:300px;
+    overflow:auto;
+    scrollbar-width: thin;
+    scrollbar-color:rgb(99, 193, 230) #f9f8fa;
+    border-right: 1px solid rgba(255, 255, 255, 0.055);
+    padding-right: 20px;
+    padding-left: 15px;
+    border-left:0px;
+    border-top:0px;
+    border-bottom:0px;
+    }
+    #totalMemberDB::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    #totalMemberDB::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgb(253, 253, 253); 
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    #totalMemberDB::-webkit-scrollbar-thumb {
+      background: rgb(81, 177, 214); 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    #totalMemberDB::-webkit-scrollbar-thumb:hover {
+      background: rgb(83, 164, 196); 
+      transition: 0.5s;
+      transition-timing-function: ease-in;
+    }
+  
+    
+    .Admin_set,.Admin_set1{
+    float: left;
+    width: 100%;
+    padding: 10px;
+     border-left:0px solid grey;
+     border-right:0px solid grey;
+     border-top:0px solid grey;
+     border-bottom:0px solid grey;
+     scrollbar-width: thin;
+     scrollbar-color:rgb(99, 193, 230) #f9f8fa;
+     border-style: dashed;
+    }
+    .Admin_set::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    .Admin_set::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgb(253, 253, 253); 
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    .Admin_set::-webkit-scrollbar-thumb {
+      background: rgb(99, 193, 230); 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    .Admin_set::-webkit-scrollbar-thumb:hover {
+      background: rgb(83, 164, 196); 
+      transition: 0.5s;
+      transition-timing-function: ease-in;
+    }
+  
+    #show{
+    display:none;
+    
+    }
+    
+  .create_grpss {
+          cursor: pointer;
+          color: rgb(197, 197, 197);
+          font-size: 12px;
+          font-family: 'Capriola';
+
+         
+        }
+  .create_grpss:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    
+  }
+  #comeWith_BringTHIS{
+  width:80%;
+  border:0px solid grey;
+  text-align:center;
+  word-break: break-word;
+ 
+  }
+  
+  P{
+  
+  border-radius :2px 2px 2px 2px;
+  line-height: normal;
+  }
+  
+  #about_groups{
+  height:150px;
+  width:95%;
+  border:0px solid grey"
+  }
+  
+  #Repgrp_info{
+  height:150px;
+  width:95%;
+  height:70px;
+  font-size:20px;
+  margin-top: 1px;
+  }
+  #checkBoxes{
+    border:0px solid grey;
+    text-align:left;
+    width:95%
+    }
+  #EveryGroup{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;  
+  }
+  .eachGroupDiv{
+    height: 300px;
+    width: 100%;
+    overflow: auto;
+    overflow-wrap: break-word;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    color: rgb(71, 186, 231);
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    scrollbar-color: rgb(177, 177, 177) rgb(230, 230, 230) !important;
+    scrollbar-width: thin !important;
+  }
+  .eachGroupDiv::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .eachGroupDiv::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(48, 46, 46); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .eachGroupDiv::-webkit-scrollbar-thumb {
+    background: rgb(38, 113, 156); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .eachGroupDiv::-webkit-scrollbar-thumb:hover {
+    background: rgb(33, 97, 134); 
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+  }
+
+  .headerListGrp{
+    text-align: center;
+    height: 20px;
+    font-weight: bold;
+    padding-top: 0px;
+    margin-bottom: 3px;
+  }
+  .totalPerGrp{
+    text-align: center;
+    height: 25px;
+    font-size: 12px;
+    padding-top: 4px;
+    text-align: center;
+    margin:auto;
+    min-width: 100px;
+    word-break: break-word;
+
+  }
+  .listGrpsAdmin{
+    margin-bottom: 7px;
+    text-align: left;
+    border:0px solid rgb(29, 28, 28);
+
+  }
+  .howManyPerGrp{
+    width: 25%;
+    float: right;
+    text-align: right;
+    font-size: 13px;
+    margin-top: 8.5px;
+    padding-right: 7px;
+  }
+  #adminGrpsAll{
+    width: 90%;
+    margin:auto;
+    margin-bottom: 100px;
+  }
+  #adminInfo{
+    background-color: rgb(255, 47, 220);
+  }
+  #adminGrpEvent{
+    font-weight: bold;
+  }
+  #dashedBdr1,#dashedBdr2,#dashedBdr3{
+  border-left:0px solid rebeccapurple;
+  border-style: dashed;
+  }
+  #headerAttach{
+  width: 80%;
+  margin: auto; 
+  border-radius: 0% 0% 50% 50%;
+  height: 65px;
+  background-color:rgb(34, 34, 39) ;
+ 
+  }
+  .topHeaderDiv{
+    background-color: rgb(30, 30, 32);
+    width: 100%;
+    padding-top: 10px;
+    font-size: 20px;
+    color: rgb(66, 170, 211);
+    padding-bottom: 10px;
+  }
+  .motherDiv{
+    background-color: rgb(34, 34, 39);
+    width:300px ;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #meetGroupMembser{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Galdeano';
+    margin:auto;
+    width: 89%;
+    margin-bottom: 20px;
+    color: rgb(21, 22, 22);
+  }
+  #clear_Lfeeds{
+    float:right;
+    margin-right: 0px;
+    font-size: 15px;
+    color: rgb(71, 186, 231);
+    height: 35px;
+    width: 50px;
+    background-color: rgba(255, 222, 173, 0);
+    border:0px solid rgb(218, 238, 245);;
+    border-radius: 5%;
+    padding-bottom: 2px;
+    margin-right: 18px;
+    }
+  
+    #clear_Lfeeds:hover{
+      color:rgb(9, 150, 206);;
+      transition: 0.5s;
+      }
+
+ #adminHeader{
+  background-color:rgb(42, 42, 48);
+ height:30px;
+ width:100%;
+ }
+ .adminStartEnd{
+  background-color:rgba(36, 155, 206, 0.288);
+  color: rgb(226, 240, 247);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right:10px;
+  border:1px solid rgb(36, 171, 230) ;
+  box-shadow: 0 0 2pt 0.1pt rgba(37, 103, 134, 0.322) ;
+  border-radius: 5px;
+  
+ }
+ .adminStartEnd:hover{
+  background-color:rgb(36, 171, 230);
+  color: rgb(226, 240, 247);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right:10px;
+  border:1px solid rgb(36, 171, 230) ;
+  box-shadow: 0 0 2pt 0.1pt rgba(37, 103, 134, 0.322) ;
+  border-radius: 5px;
+ }
+ .adminBtnStyle{
+  background-color:rgb(5, 107, 151);
+  color: rgb(226, 240, 247);;
+  border:0px;
+  box-shadow: 0 0 2pt 0.1pt rgb(13, 140, 194) ;
+  text-shadow: 0 0 2px #1579a0cb;
+ }
+ .adminBtnStyle:hover{
+  background-color: rgb(36, 171, 230);
+  color: rgb(240, 245, 247);
+  border:0px;
+  text-shadow: 0 0 2px #1579a0cb;
+  transition: 0.5s;
+ }
+ #small_admin{
+ display:none;
+ padding: 10px;
+ width: 200px;
+ }
+
+#gen_membersAdminxx{
+ text-align:left;
+ overflow:auto;
+ height:300px;
+ scrollbar-width: thin;
+ scrollbar-color: #1ea7f7 #f3f3f3;
+ border: 0px solid black;
+ margin-top: 17px;
+ 
+  
+}
+
+    #gen_membersAdminxx::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    #gen_membersAdminxx::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    #gen_membersAdminxx::-webkit-scrollbar-thumb {
+      background: #30bee9; 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    #gen_membersAdminxx::-webkit-scrollbar-thumb:hover {
+      background: #fffeff; 
+      transition: 0.5s;
+      transition-timing-function: ease-in;
+    }
+ 
+
+  #istCol{
+    width:100%; 
+    
+    }
+ 
+ #istCol2{
+      width:33%;border :0px solid red;
+      display: none;
+      }
+      
+ #istCol3{
+      width:33%;
+      text-align:right;
+        }
+
+ #istCol4{
+     margin-right: 0px;
+     margin-bottom: 5px;
+     font-size: 10px;
+     float: right;
+     display: none;
+        }
+  #signUp{
+    display: none;
+  }
+  #aboutAGB{
+  }
+  #poweredByMobile{
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top:1px ;
+    padding-bottom:3px ;
+    width: 182px;
+    border: 1px solid rgb(253, 249, 249);
+    border-radius: 50px;
+    border-top-style: dashed;
+    display: block;
+    color: rgb(239, 244, 247);
+    text-align: center; 
+  }
+  #mobileMenuX{
+    display: block;
+  }
+  .create_grpssX {
+    cursor: pointer;
+    color: rgb(247, 243, 243);
+    font-size: 12px;
+    font-family: 'Capriola'
+  }
+.create_grpssX:hover{
+color: rgb(255, 255, 255);
+transition: 0.5s;
+}
+#adminText{
+  text-align: right;
+  margin-left:0px;
+  margin-top: 7px;
+  border: 1px solid rgb(255, 238, 1);
+  width: 40%;
+  margin-bottom: 15px;
+  float: right;
+  display: none;
+  }
+  #AdminGrpAct{
+  text-align: left;
+  margin-right:0px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 67%;
+  float: left;
+ 
+  }
+  #adminTextMobile{
+    text-align: right;
+  margin-left:0px;
+  margin-top: 7px;
+  width: 30%;
+  margin-bottom: 15px;
+  float: right;
+  padding-right: 5px;
+  display: block;
+  }
+  #checkBoxesBr{
+    display: none;
+  }
+  #Admin-Dash-board{
+    margin-top: 15px;
+  }
+  #About_THIScomp{
+    width: 95%;
+    text-align: justify;
+  }
+  .adminBGcolor{
+    background-color:rgb(247, 253, 255);
+  }
+  #Event_ORG{
+    font-size: 17px;
+  }
+  #grpnMems{
+    font-size: 17px;
+    text-align: center;
+    }
+  .signU{
+  width: 100%;
+  height: 50px;
+  margin-right: 5px;
+  font-size: 20px;
+  margin-bottom: 3px;
+  border:0px solid rgb(76, 168, 230)
+  }
+  .signUpBtn{
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(39, 39, 46);
+  color: rgb(200, 205, 207);
+  margin-left: 120px;
+  border: 0px;
+ }
+
+ a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+  .signUpBtn:hover{
+  color: rgb(239, 243, 245);
+  background-color: rgb(31, 30, 30);
+  transition: 0.5s;
+ }
+  #signUpNow{
+  width: 90%;
+  height: 160px;
+  border: 0px solid tomato;
+  margin:auto;
+ }
+ #aboutUS{
+  width: 90%;
+  height: 200px;
+  border: 1px solid tomato;
+  margin:auto;
+  text-align: justify;
+  }
+  .endGrouping{
+    width: 70%;
+    margin:auto;
+    height: 30px;
+    text-align: center;
+    }
+}
+
+
+    
+
